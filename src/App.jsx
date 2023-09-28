@@ -1,9 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+/* These are going to be our "pages" */
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Home Page</div>,
+    element: <h1>Home Page</h1>,
     errorElement: <h1 className="text-4xl font-bold text-red-500">404 Error</h1>
   },
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
 
 function App() {
 
+  /* We shouldn't really have to change this */
   return (
     <>
       <RouterProvider router={router} />
